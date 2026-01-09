@@ -1,0 +1,66 @@
+***Instalar Angular usando Angular CLI***
+
+¿Qué es Angular CLI?
+
+• Angular CLI (Command Line Interface) es una herramienta que te permite crear y
+gestionar proyectos Angular desde la línea de comandos. Simplifica la creación de
+nuevos proyectos, la ejecución de aplicaciones y la generación de componentes,
+servicios, módulos, y mucho más.
+Instrucciones de Instalación:
+1. Instalar Angular CLI Globalmente:
+    o En la terminal, ejecuta el siguiente comando para instalar Angular CLI de
+        manera global: ```npm install -g @angular/cli```
+        
+    o Esto hará que Angular CLI esté disponible en cualquier directorio de tu
+    sistema.
+
+2. Verificar la Instalación:
+    o Después de la instalación, verifica que Angular CLI se haya instalado
+    correctamente ejecutando: ```ng --version```
+
+    o Deberías ver la versión de Angular CLI y de los paquetes asociados.
+
+***Crear un Nuevo Proyecto Angular con Visual Studio Code***
+
+1. Crear el Proyecto Angular:
+    o Una vez que estés en el directorio deseado, ejecuta el siguiente comando
+    para crear un nuevo proyecto Angular: ```ng new nombre-del-proyecto```
+
+    o Reemplaza nombre-del-proyecto con el nombre que desees para tu
+    proyecto.
+
+    o Esto crea un nuevo proyecto de Angular con las últimas características
+    disponibles en la última versión.
+
+    o Si deseas crear un proyecto de Angular que utiliza la sintaxis clásica (Ej.
+    Manejo de Módulos en lugar componentes Standalone), y no las últimas
+    características por default, entonces debes crear tu proyecto usando el
+    siguiente comando: ```ng new nombre-del-proyecto --standalone=false```
+
+    o El parámetro standalone=false es para hacer compatible los proyectos que
+    crees con las versiones anteriores de Angular. Si deseas usar las últimas
+    características de Angular por default (como componentes standalone)
+    entonces puedes evitar el uso de este parámetro.
+
+3. Configuración del Proyecto:
+    o Angular CLI te hará algunas preguntas para configurar tu proyecto:
+
+        ▪ Would you like to share pseudonymous usage data about this
+        project with the Angular Team at Google under Google's Privacy
+        Policy at https://policies.google.com/privacy. For more details and
+        how to change this setting, see https://angular.dev/cli/analytics.
+        (y/N) Proporciona: N
+
+        ▪ Estilo de hojas de estilo: Selecciona el formato de hojas de estilo
+        que prefieras (CSS, SCSS, SASS, etc.). Ej. Selecciona CSS (con las
+        flechas hacia arriba o hacia abajo) y da enter.
+
+        ▪ Do you want to enable Server-Side Rendering (SSR) and Static Site
+        Generation (SSG/Prerendering)? (y/N). De momento no necesitamos
+        agregar esta característica, por lo tanto proporciona N.
+
+        ▪ ¿Deseas agregar Angular routing?: Si te pregunta por esta opción,
+        esto permite agregar usar rutas en tu aplicación (navegación entre
+        diferentes páginas o componentes). De momento proporciona N.
+        Por default se agrega Angular routing a tus proyectos, así que puede
+        ser que en las últimas versiones ya no te pregunta por esta opción.
